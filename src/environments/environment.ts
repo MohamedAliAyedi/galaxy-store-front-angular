@@ -5,7 +5,7 @@
 
 export const environment = {
   production: false,
-  API_URL: 'http://localhost:3000',
+  API_URL: 'https://galaxy-store-back-nodejs.vercel.app',
   ICE_SERVERS: [ 'stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302'],
   OAuthKey: 'JoNbnHtUjki0NoPkoqzLYUVeanQ'
 };
