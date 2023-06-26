@@ -10,7 +10,11 @@ export class AuthInterceptor implements HttpInterceptor {
 
         const token = this.authService.getToken();
         const clonedRequest = req.clone({
-            headers: req.headers.set('Authorization', "Bearer " + token)
+            headers: req.headers
+            .set('Authorization', "Bearer " + token)
+            .set('Access-Control-Allow-Origin', "*")
+            .set('Access-Control-Allow-Methods', "GET, POST, PUT, PATCH, DELETE, OPTIONS")
+            .set('Access-Control-Allow-Headers', "Origin, X-Requested-With, Content-Type, Accept, Authorization")
         });
         return next.handle(clonedRequest);
     }
