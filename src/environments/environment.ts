@@ -5,7 +5,7 @@
 
 export const environment = {
   production: false,
-  API_URL: 'https://galaxy-store-back-nodejs.vercel.app',
+  API_URL: 'https://0160-41-226-167-173.eu.ngrok.io',
   ICE_SERVERS: [ 'stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302'],
   OAuthKey: 'JoNbnHtUjki0NoPkoqzLYUVeanQ'
 };
